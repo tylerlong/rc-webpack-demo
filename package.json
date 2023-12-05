@@ -5,29 +5,26 @@
   "license": "UNLICENSED",
   "scripts": {
     "lint": "eslint --fix '**/*.{ts,tsx,js,jsx}' && prettier --write . && sort-package-json",
-    "serve": "rm -rf .parcel-cache && parcel src/index.html --dist-dir docs"
+    "serve": "webpack serve --mode development --open --config webpack.config.ts"
   },
   "devDependencies": {
     "@types/node": "^20.10.3",
-    "@types/react-dom": "^18.2.17",
     "@typescript-eslint/eslint-plugin": "^6.13.2",
     "@typescript-eslint/parser": "^6.13.2",
-    "antd": "^5.12.1",
-    "dotenv-override-true": "^6.2.2",
     "eslint": "^8.55.0",
     "eslint-config-alloy": "^5.1.2",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-prettier": "^5.0.1",
-    "manate": "^0.5.3",
-    "parcel": "^2.10.3",
+    "html-webpack-plugin": "^5.5.3",
     "prettier": "^3.1.0",
-    "process": "^0.11.10",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
     "sort-package-json": "^2.6.0",
-    "tsx": "^4.6.2",
+    "ts-loader": "^9.5.1",
+    "ts-node": "^10.9.1",
     "ttpt": "^0.8.2",
     "typescript": "^5.3.2",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^4.15.1",
     "yarn-upgrade-all": "^0.7.2"
   }
 }
