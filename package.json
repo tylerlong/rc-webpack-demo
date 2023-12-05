@@ -5,7 +5,7 @@
   "license": "UNLICENSED",
   "scripts": {
     "lint": "eslint --fix '**/*.{ts,tsx,js,jsx}' && prettier --write . && sort-package-json",
-    "serve": "webpack serve --mode development --open --config webpack.config.ts"
+    "serve": "webpack serve --open --config webpack.config.ts"
   },
   "devDependencies": {
     "@types/node": "^20.10.3",

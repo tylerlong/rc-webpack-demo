@@ -2,7 +2,7 @@ import type { Configuration } from 'webpack';
 import HtmlWebpackPlugin from 'html-webpack-plugin';
 
 const config: Configuration = {
-  mode: 'production',
+  mode: 'development',
   entry: './src/index.ts',
   output: {
     filename: 'bundle.js',
